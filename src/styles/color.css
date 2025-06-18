@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+@theme {
+/* :root { */
+  /* disable all of the default colors */
+  /* --color-*: initial;  */
+
+  /* define pindad custom color */
+
+  /* PRIMITIVE COLOR */
+  
+  /* primary */
+  --color-primary-black: #000;
+  --color-primary-white: #fff;
+  
+  /* neutral */
+  --color-neutral-50: #F2F2F2;
+  --color-neutral-100: #E5E5E5;
+  --color-neutral-150: #D9D9D9;
+  --color-neutral-200: #CCCCCC;
+  --color-neutral-250: #BFBFBF;
+  --color-neutral-300: #B2B2B2;
+  --color-neutral-350: #A6A6A6;
+  --color-neutral-400: #999999;
+  --color-neutral-450: #8C8C8C;
+  --color-neutral-500: #808080;
+  --color-neutral-550: #737373;
+  --color-neutral-600: #666666;
+  --color-neutral-650: #595959;
+  --color-neutral-700: #4D4D4D;
+  --color-neutral-750: #404040;
+  --color-neutral-800: #333333;
+  --color-neutral-850: #262626;
+  --color-neutral-900: #1A1A1A;
+  --color-neutral-950: #0D0D0D;
+
+  /* brand */
+  --color-brand-100: #CCDBE7;
+  --color-brand-200: #99B7CF;
+  --color-brand-300: #6693B7;
+  --color-brand-400: #336F9F;
+  --color-brand-500: #004B87;
+  --color-brand-600: #003C6C;
+  --color-brand-700: #002D51;
+  --color-brand-800: #001E36;
+  --color-brand-900: #000F1B;
+
+  /* yellow or brand secondary */
+  --color-yellow-100: #FFF1D0;
+  --color-yellow-200: #FEE3A1;
+  --color-yellow-300: #FED471;
+  --color-yellow-400: #FDC642;
+  --color-yellow-500: #FDB813;
+  --color-yellow-600: #CA930F;
+  --color-yellow-700: #986E0B;
+  --color-yellow-800: #654A08;
+  --color-yellow-900: #332504;
+  
+  /* blue */
+  --color-blue-100: #D6DDFF;
+  --color-blue-200: #ADBBFF;
+  --color-blue-300: #8599FF;
+  --color-blue-400: #5C77FF;
+  --color-blue-500: #3355FF;
+  --color-blue-600: #2944CC;
+  --color-blue-700: #1F3399;
+  --color-blue-800: #142266;
+  --color-blue-900: #0A1133;
+  
+  /* red */
+  --color-red-100: #FACCCC;
+  --color-red-200: #F59999;
+  --color-red-300: #EF6666;
+  --color-red-400: #EA3333;
+  --color-red-500: #E50000;
+  --color-red-600: #B70000;
+  --color-red-700: #890000;
+  --color-red-800: #5C0000;
+  --color-red-900: #2E0000;
+  
+  /* orange */
+  --color-orange-100: #FFE6CC;
+  --color-orange-200: #FFCC99;
+  --color-orange-300: #FFB366;
+  --color-orange-400: #FF9933;
+  --color-orange-500: #FF8000;
+  --color-orange-600: #CC6600;
+  --color-orange-700: #994D00;
+  --color-orange-800: #663300;
+  --color-orange-900: #331A00;
+  
+  /* green */
+  --color-green-100: #CCEBD6;
+  --color-green-200: #99D6AD;
+  --color-green-300: #66C285;
+  --color-green-400: #33AD5C;
+  --color-green-500: #009933;
+  --color-green-600: #007A29;
+  --color-green-700: #005C1F;
+  --color-green-800: #003D14;
+  --color-green-900: #001F0A;
+
+  /* SEMANTIC COLOR */
+
+  /* Content */
+  --color-content-primary: var(--color-neutral-900);
+  --color-content-secondary: var(--color-neutral-800);
+  --color-content-tertiary: var(--color-neutral-600);
+  --color-content-primary-inverse: var(--color-primary-white);
+  --color-content-secondary-inverse: var(--color-neutral-100);
+  --color-content-tertiary-inverse: var(--color-neutral-300);
+  --color-content-disabled: var(--color-neutral-300);
+  --color-content-brand: var(--color-brand-500);
+  --color-content-yellow: var(--color-yellow-500);
+  --color-content-link: var(--color-blue-500);
+  --color-content-link-hover: var(--color-blue-600);
+  --color-content-link-pressed: var(--color-blue-700);
+  --color-content-info: var(--color-blue-500);
+  --color-content-info-bold: var(--color-blue-600);
+  --color-content-notice: var(--color-orange-500);
+  --color-content-notice-bold: var(--color-orange-700);
+  --color-content-negative: var(--color-red-500);
+  --color-content-negative-bold: var(--color-red-600);
+  --color-content-positive: var(--color-green-500);
+  --color-content-positive-bold: var(--color-green-600);
+  
+  /* background */
+  --color-background-primary: var(--color-primary-white);
+  --color-background-hover: var(--color-neutral-50);
+  --color-background-pressed: var(--color-neutral-100);
+  --color-background-seleced: var(--color-brand-100);
+  --color-background-disabled: var(--color-neutral-50);
+  --color-background-inverse: var(--color-neutral-900);
+  --color-background-brand: var(--color-brand-500);
+  --color-background-brand-hover: var(--color-brand-600);
+  --color-background-brand-pressed: var(--color-brand-700);
+  --color-background-brand-selected: var(--color-brand-400);
+  --color-background-brand-subtle: var(--color-brand-100);
+  --color-background-yellow: var(--color-yellow-500);
+  --color-background-yellow-hover: var(--color-yellow-600);
+  --color-background-yellow-pressed: var(--color-yellow-700);
+  --color-background-yellow-selected: var(--color-yellow-400);
+  --color-background-yellow-subtle: var(--color-yellow-100);
+  --color-background-info: var(--color-blue-500);
+  --color-background-info-subtle: var(--color-blue-100);
+  --color-background-notice: var(--color-orange-500);
+  --color-background-notice-subtle: var(--color-orange-100);
+  --color-background-negative: var(--color-red-500);
+  --color-background-negative-subtle: var(--color-red-100);
+  --color-background-positive: var(--color-green-500);
+  --color-background-positive-subtle: var(--color-green-100);
+
+  /* border */
+  --color-border-primary: var(--color-neutral-600);
+  --color-border-secondary: var(--color-neutral-400);
+  --color-border-tertiary: var(--color-neutral-200);
+  --color-border-disabled: var(--color-neutral-200);
+  --color-border-brand: var(--color-brand-500);
+  --color-border-yellow: var(--color-yellow-500);
+  --color-border-inverse: var(--color-primary-white);
+  --color-border-focus: var(--color-blue-500);
+  --color-border-info: var(--color-blue-500);
+  --color-border-notice: var(--color-orange-500);
+  --color-border-negative: var(--color-red-500);
+  --color-border-positive: var(--color-green-500);
+
+  /* surface */
+  --color-l0: var(--color-primary-white);
+  --color-l1: var(--color-primary-white);
+  --color-l2: var(--color-primary-white);
+  --color-l3: var(--color-primary-white);
+  --color-l4: var(--color-primary-white);
+  --color-l5: var(--color-primary-white);
+  --color-l6: var(--color-primary-white);
+}
